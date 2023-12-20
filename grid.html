@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar-SigmaTest</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        :root {
+            --primary-btn-clr: #00b6d1;
+            --secondary-btn-clr: #5cb75c;
+            --box-clr: #f9f9f9;
+            --box-font: 12px;
+            --hover-one: #09a6bd;
+            --hover-two: #81c780;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #222222;
+            font-family: 'Segoe UI';
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 90vw;
+            height: 97px;
+            margin: 0 auto;
+        }
+
+        header .logo img {
+            width: 13.3vw;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .links {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            gap: 2.3rem;
+        }
+
+        .links>.click {
+            list-style: none;
+            font-weight: 400;
+        }
+
+        .links>.click>.icon {
+            font-size: 11px;
+            margin-left: 6px;
+            cursor: pointer;
+        }
+
+        .main {
+            width: 80vw;
+            margin: 0 auto;
+        }
+
+        .main>.grid-box {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            gap: 1.4rem;
+        }
+
+
+        .grid-items {
+            background-color: var(--box-clr);
+            padding: 1.8rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #first-box {
+            row-gap: 3.7rem;
+        }
+
+        .grid-items>p {
+            font-size: 12px;
+            margin: 9px auto 34px auto;
+        }
+
+        .btn {
+            padding: 8px 12px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        .Primary-btn {
+            background-color: var(--primary-btn-clr);
+            margin-right: 4px;
+        }
+
+        .secondary-btn {
+            background-color: var(--secondary-btn-clr);
+        }
+
+        .btn-hover1:hover {
+            background-color: var(--hover-one);
+        }
+
+        .btn-hover2:hover {
+            background-color: var(--hover-two);
+        }
+
+        .btn>a {
+            color: white;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/Dark-logo.png" alt="Main.logo">
+        </div>
+        <nav class="navigation-bar">
+            <ul class="links">
+                <li class="click"><a href="">Products</a><i class="fa-solid fa-chevron-down icon"></i></li>
+                <li class="click"><a href="">Pricing</a><i class="fa-solid fa-chevron-down icon"></i></li>
+                <li class="click"><a href="">Resources</a><i class="fa-solid fa-chevron-down icon"></i></li>
+                <li class="click"><a href="">About us</a><i class="fa-solid fa-chevron-down icon"></i></li>
+                <li class="click"><img src="copy.png" alt="Translation-logo"></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main">
+        <div class="grid-box">
+            <div class="grid-items" id="first-box">
+                <h2>English</h2>
+                <div class="btn-layer">
+                    <button class="Primary-btn btn btn-hover1"><a
+                            href="https://downloads.ultraedit.com/main/ue/win/ue_english.exe?_gl=1*zx8nr5*_ga*MTgzOTUxODUwMC4xNjk5MzU3NTQ3*_ga_QNXHVTPWNS*MTY5OTY5OTE4MS43LjEuMTY5OTY5OTM3MS41OS4wLjA.">Download
+                            32-bit</a></button>
+                    <button class="secondary-btn btn btn-hover2"><a
+                            href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe?_gl=1*pr4d8*_ga*MTgzOTUxODUwMC4xNjk5MzU3NTQ3*_ga_QNXHVTPWNS*MTY5OTY5OTE4MS43LjEuMTY5OTY5OTM3MS41OS4wLjA.">Download
+                            64-bit</a></button>
+                </div>
+            </div>
+            <div class="grid-items">
+                <h2>Deutsch</h2>
+                <p>German</p>
+                <div class="btn-layer">
+                    <button class="Primary-btn btn btn-hover1"><a
+                            href="https://downloads.ultraedit.com/main/ue/win/ue_english.exe?_gl=1*zx8nr5*_ga*MTgzOTUxODUwMC4xNjk5MzU3NTQ3*_ga_QNXHVTPWNS*MTY5OTY5OTE4MS43LjEuMTY5OTY5OTM3MS41OS4wLjA.">Download
+                            32-bit</a></button>
+                    <button class="secondary-btn btn btn-hover2"><a
+                            href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe?_gl=1*pr4d8*_ga*MTgzOTUxODUwMC4xNjk5MzU3NTQ3*_ga_QNXHVTPWNS*MTY5OTY5OTE4MS43LjEuMTY5OTY5OTM3MS41OS4wLjA.">Download
+                            64-bit</a></button>
+                </div>
+            </div>
+            <div class="grid-items">
+                <h2>Italio</h2>
+                <p>Italian</p>
+                <div class="btn-layer">
+                    <button class="Primary-btn btn btn-hover1"><a
+                            href="https://downloads.ultraedit.com/main/ue/win/ue_english.exe?_gl=1*zx8nr5*_ga*MTgzOTUxODUwMC4xNjk5MzU3NTQ3*_ga_QNXHVTPWNS*MTY5OTY5OTE4MS43LjEuMTY5OTY5OTM3MS41OS4wLjA.">Download
+                            32-bit</a></button>
+                    <button class="secondary-btn btn btn-hover2"><a
+                            href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe?_gl=1*pr4d8*_ga*MTgzOTUxODUwMC4xNjk5MzU3NTQ3*_ga_QNXHVTPWNS*MTY5OTY5OTE4MS43LjEuMTY5OTY5OTM3MS41OS4wLjA.">Download
+                            64-bit</a></button>
+                </div>
+            </div>
+            <div class="grid-items">
+                <h2>Espanol</h2>
+                <p>Spanish</p>
+                <div class="btn-layer">
+                    <button class="Primary-btn btn btn-hover1"><a
+                            href="https://downloads.ultraedit.com/main/ue/win/ue_english.exe?_gl=1*zx8nr5*_ga*MTgzOTUxODUwMC4xNjk5MzU3NTQ3*_ga_QNXHVTPWNS*MTY5OTY5OTE4MS43LjEuMTY5OTY5OTM3MS41OS4wLjA.">Download
+                            32-bit</a></button>
+                    <button class="secondary-btn btn btn-hover2"><a
+                            href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe?_gl=1*pr4d8*_ga*MTgzOTUxODUwMC4xNjk5MzU3NTQ3*_ga_QNXHVTPWNS*MTY5OTY5OTE4MS43LjEuMTY5OTY5OTM3MS41OS4wLjA.">Download
+                            64-bit</a></button>
+                </div>
+            </div>
+            <div class="grid-items">
+                <h2>francais</h2>
+                <p>French</p>
+                <div class="btn-layer">
+                    <button class="Primary-btn btn btn-hover1"><a
+                            href="https://downloads.ultraedit.com/main/ue/win/ue_english.exe?_gl=1*zx8nr5*_ga*MTgzOTUxODUwMC4xNjk5MzU3NTQ3*_ga_QNXHVTPWNS*MTY5OTY5OTE4MS43LjEuMTY5OTY5OTM3MS41OS4wLjA.">Download
+                            32-bit</a></button>
+                    <button class="secondary-btn btn btn-hover2"><a
+                            href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe?_gl=1*pr4d8*_ga*MTgzOTUxODUwMC4xNjk5MzU3NTQ3*_ga_QNXHVTPWNS*MTY5OTY5OTE4MS43LjEuMTY5OTY5OTM3MS41OS4wLjA.">Download
+                            64-bit</a></button>
+                </div>
+            </div>
+            <div class="grid-items">
+                <h2>Portugues brasileiro</h2>
+                <p>Brazilian Portuguese</p>
+                <div class="btn-layer">
+                    <button class="Primary-btn btn btn-hover1"><a
+                            href="https://downloads.ultraedit.com/main/ue/win/ue_english.exe?_gl=1*zx8nr5*_ga*MTgzOTUxODUwMC4xNjk5MzU3NTQ3*_ga_QNXHVTPWNS*MTY5OTY5OTE4MS43LjEuMTY5OTY5OTM3MS41OS4wLjA.">Download
+                            32-bit</a></button>
+                    <button class="secondary-btn btn btn-hover2"><a
+                            href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe?_gl=1*pr4d8*_ga*MTgzOTUxODUwMC4xNjk5MzU3NTQ3*_ga_QNXHVTPWNS*MTY5OTY5OTE4MS43LjEuMTY5OTY5OTM3MS41OS4wLjA.">Download
+                            64-bit</a></button>
+                </div>
+            </div>
+            <div class="grid-items">
+                <h2>Japanese</h2>
+                <p>Japanese</p>
+                <div class="btn-layer">
+                    <button class="Primary-btn btn btn-hover1"><a
+                            href="https://downloads.ultraedit.com/main/ue/win/ue_english.exe?_gl=1*zx8nr5*_ga*MTgzOTUxODUwMC4xNjk5MzU3NTQ3*_ga_QNXHVTPWNS*MTY5OTY5OTE4MS43LjEuMTY5OTY5OTM3MS41OS4wLjA.">Download
+                            32-bit</a></button>
+                    <button class="secondary-btn btn btn-hover2"><a
+                            href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe?_gl=1*pr4d8*_ga*MTgzOTUxODUwMC4xNjk5MzU3NTQ3*_ga_QNXHVTPWNS*MTY5OTY5OTE4MS43LjEuMTY5OTY5OTM3MS41OS4wLjA.">Download
+                            64-bit</a></button>
+                </div>
+            </div>
+            <div class="grid-items">
+                <h2>Korean</h2>
+                <p>Korean</p>
+                <div class="btn-layer">
+                    <button class="Primary-btn btn btn-hover1"><a
+                            href="https://downloads.ultraedit.com/main/ue/win/ue_english.exe?_gl=1*zx8nr5*_ga*MTgzOTUxODUwMC4xNjk5MzU3NTQ3*_ga_QNXHVTPWNS*MTY5OTY5OTE4MS43LjEuMTY5OTY5OTM3MS41OS4wLjA.">Download
+                            32-bit</a></button>
+                    <button class="secondary-btn btn btn-hover2"><a
+                            href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe?_gl=1*pr4d8*_ga*MTgzOTUxODUwMC4xNjk5MzU3NTQ3*_ga_QNXHVTPWNS*MTY5OTY5OTE4MS43LjEuMTY5OTY5OTM3MS41OS4wLjA.">Download
+                            64-bit</a></button>
+                </div>
+            </div>
+            <div class="grid-items">
+                <h2>Chinese</h2>
+                <p>Chinese</p>
+                <div class="btn-layer">
+                    <button class="Primary-btn btn btn-hover1"><a
+                            href="https://downloads.ultraedit.com/main/ue/win/ue_english.exe?_gl=1*zx8nr5*_ga*MTgzOTUxODUwMC4xNjk5MzU3NTQ3*_ga_QNXHVTPWNS*MTY5OTY5OTE4MS43LjEuMTY5OTY5OTM3MS41OS4wLjA.">Download
+                            32-bit</a></button>
+                    <button class="secondary-btn btn btn-hover2"><a
+                            href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe?_gl=1*pr4d8*_ga*MTgzOTUxODUwMC4xNjk5MzU3NTQ3*_ga_QNXHVTPWNS*MTY5OTY5OTE4MS43LjEuMTY5OTY5OTM3MS41OS4wLjA.">Download
+                            64-bit</a></button>
+                </div>
+            </div>
+            <div class="grid-items">
+                <h2>Traditional Chinese</h2>
+                <p>Traditional Chinese</p>
+                <div class="btn-layer">
+                    <button class="Primary-btn btn btn-hover1"><a
+                            href="https://downloads.ultraedit.com/main/ue/win/ue_english.exe?_gl=1*zx8nr5*_ga*MTgzOTUxODUwMC4xNjk5MzU3NTQ3*_ga_QNXHVTPWNS*MTY5OTY5OTE4MS43LjEuMTY5OTY5OTM3MS41OS4wLjA.">Download
+                            32-bit</a></button>
+                    <button class="secondary-btn btn btn-hover2"><a
+                            href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe?_gl=1*pr4d8*_ga*MTgzOTUxODUwMC4xNjk5MzU3NTQ3*_ga_QNXHVTPWNS*MTY5OTY5OTE4MS43LjEuMTY5OTY5OTM3MS41OS4wLjA.">Download
+                            64-bit</a></button>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
